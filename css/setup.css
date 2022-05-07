@@ -1,0 +1,12 @@
+.fancybox__slide {
+    padding: 0 !important;
+}
+
+.fancybox__content {
+    height: 90% !important;
+    padding: 0 !important;
+}
+
+svg {
+    background: #ffffff !important;
+}
