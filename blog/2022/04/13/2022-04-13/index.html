@@ -4,7 +4,6 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.93.3" />
-<link rel="alternate" type="application/rss&#43;xml" href="/categories/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -19,17 +18,29 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Categories | 博客</title>
-<meta name="description" content="">
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="博客" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/categories/" /><meta property="og:site_name" content="博客" />
+<title>2022-04-13 | 博客</title>
+<meta name="description" content="
+  
+    
+      
+        Firecracker internals: a deep dive inside the technology powering AWS Lambda · Tal Hoffman …">
+<meta property="og:title" content="2022-04-13" />
+<meta property="og:description" content="Firecracker internals: a deep dive inside the technology powering AWS Lambda · Tal Hoffman  Amazon decided to come-up with a better solution for its serverless workloads requiring:
+ Consistent, close-to-native performance, which is also not being affected by other functions running on the same node Functions must be strongly isolated and protected against information disclosure, privilege escalation, and other security risks Full compatibility so functions are able to run arbitrary libraries and binaries without any re-compilation or code changes High and flexible scalability allowing thousands of functions to run on a single machine Functions must be able to over-commit resources, only using the minimal amount of resources they need Startup &amp; tear-down should be very quick so that functions’ cold-start times remain small   Firecracker takes advantage of the 64-bit Linux Boot Protocol, which specifies how the kernel image should be loaded and run." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2022/04/13/2022-04-13/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-04-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-13T00:00:00+00:00" /><meta property="og:site_name" content="博客" />
 
-<meta itemprop="name" content="Categories">
-<meta itemprop="description" content="博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="博客"/>
+<meta itemprop="name" content="2022-04-13">
+<meta itemprop="description" content="Firecracker internals: a deep dive inside the technology powering AWS Lambda · Tal Hoffman  Amazon decided to come-up with a better solution for its serverless workloads requiring:
+ Consistent, close-to-native performance, which is also not being affected by other functions running on the same node Functions must be strongly isolated and protected against information disclosure, privilege escalation, and other security risks Full compatibility so functions are able to run arbitrary libraries and binaries without any re-compilation or code changes High and flexible scalability allowing thousands of functions to run on a single machine Functions must be able to over-commit resources, only using the minimal amount of resources they need Startup &amp; tear-down should be very quick so that functions’ cold-start times remain small   Firecracker takes advantage of the 64-bit Linux Boot Protocol, which specifies how the kernel image should be loaded and run."><meta itemprop="datePublished" content="2022-04-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-04-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="377">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2022-04-13"/>
+<meta name="twitter:description" content="Firecracker internals: a deep dive inside the technology powering AWS Lambda · Tal Hoffman  Amazon decided to come-up with a better solution for its serverless workloads requiring:
+ Consistent, close-to-native performance, which is also not being affected by other functions running on the same node Functions must be strongly isolated and protected against information disclosure, privilege escalation, and other security risks Full compatibility so functions are able to run arbitrary libraries and binaries without any re-compilation or code changes High and flexible scalability allowing thousands of functions to run on a single machine Functions must be able to over-commit resources, only using the minimal amount of resources they need Startup &amp; tear-down should be very quick so that functions’ cold-start times remain small   Firecracker takes advantage of the 64-bit Linux Boot Protocol, which specifies how the kernel image should be loaded and run."/>
 
 
 
@@ -51,7 +62,7 @@
 <link rel="stylesheet" href="/css/fancybox.css"><link rel="stylesheet" href="/css/setup.css">
 
   </head>
-  <body class="td-taxonomy">
+  <body class="td-page td-blog">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -71,7 +82,7 @@
 				
 				
 				
-				<a class="nav-link" href="/blog/" ><i class='fa-solid fa-link'></i><span>博客</span></a>
+				<a class="nav-link active" href="/blog/" ><i class='fa-solid fa-link'></i><span class="active">博客</span></a>
 			</li>
 			
 			
@@ -93,23 +104,231 @@
 </nav>
 
     </header>
-    <div class="container-fluid td-default td-outer">
-      <main role="main" class="td-main">
-        
-<div class="td-content">
-  <main class="taxonomy-terms-page">
-    <h1>Categories</h1>
-    
-
-
-
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; 站内搜索…"
+  aria-label="站内搜索…"
+  autocomplete="off"
   
-  
+  data-offline-search-index-json-src="/offline-search-index.af57244ac7a3e6a09481a712c0bfb123.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
 
-  </main>
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="collapse td-sidebar-nav foldable-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-blog-li">
+  <a href="/blog/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-blog"><span class="">博客</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-blogbookmark-li">
+  <input type="checkbox" id="m-blogbookmark-check" checked/>
+  <label for="m-blogbookmark-check"><a href="/blog/bookmark/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogbookmark"><span class="">收藏</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202205062022-05-06-li">
+  <input type="checkbox" id="m-blog202205062022-05-06-check"/>
+  <label for="m-blog202205062022-05-06-check"><a href="/blog/2022/05/06/2022-05-06/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202205062022-05-06"><span class="">2022-05-06</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204292022-04-29-li">
+  <input type="checkbox" id="m-blog202204292022-04-29-check"/>
+  <label for="m-blog202204292022-04-29-check"><a href="/blog/2022/04/29/2022-04-29/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204292022-04-29"><span class="">2022-04-29</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204282022-04-28-li">
+  <input type="checkbox" id="m-blog202204282022-04-28-check"/>
+  <label for="m-blog202204282022-04-28-check"><a href="/blog/2022/04/28/2022-04-28/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204282022-04-28"><span class="">2022-04-28</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204272022-04-27-li">
+  <input type="checkbox" id="m-blog202204272022-04-27-check"/>
+  <label for="m-blog202204272022-04-27-check"><a href="/blog/2022/04/27/2022-04-27/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204272022-04-27"><span class="">2022-04-27</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204202022-04-20-li">
+  <input type="checkbox" id="m-blog202204202022-04-20-check"/>
+  <label for="m-blog202204202022-04-20-check"><a href="/blog/2022/04/20/2022-04-20/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204202022-04-20"><span class="">2022-04-20</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204152022-04-15-li">
+  <input type="checkbox" id="m-blog202204152022-04-15-check"/>
+  <label for="m-blog202204152022-04-15-check"><a href="/blog/2022/04/15/2022-04-15/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204152022-04-15"><span class="">2022-04-15</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-blog202204132022-04-13-li">
+  <input type="checkbox" id="m-blog202204132022-04-13-check" checked/>
+  <label for="m-blog202204132022-04-13-check"><a href="/blog/2022/04/13/2022-04-13/" class="align-left pl-0  active td-sidebar-link td-sidebar-link__page" id="m-blog202204132022-04-13"><span class="td-sidebar-nav-active-item">2022-04-13</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204122022-04-12-li">
+  <input type="checkbox" id="m-blog202204122022-04-12-check"/>
+  <label for="m-blog202204122022-04-12-check"><a href="/blog/2022/04/12/2022-04-12/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204122022-04-12"><span class="">2022-04-12</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202204062022-04-06-li">
+  <input type="checkbox" id="m-blog202204062022-04-06-check"/>
+  <label for="m-blog202204062022-04-06-check"><a href="/blog/2022/04/06/2022-04-06/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202204062022-04-06"><span class="">2022-04-06</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog202203312022-03-31-li">
+  <input type="checkbox" id="m-blog202203312022-03-31-check"/>
+  <label for="m-blog202203312022-03-31-check"><a href="/blog/2022/03/31/2022-03-31/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog202203312022-03-31"><span class="">2022-03-31</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
 </div>
 
-      </main>
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            
+
+
+
+
+            
+
+	
+		
+			
+				
+			
+			
+
+
+
+  
+  
+
+		
+			
+				
+			
+			
+
+
+
+  
+  
+
+		
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
+            
+<div class="td-content">
+	<h1>2022-04-13</h1>
+	
+	<div class="td-byline mb-4">
+		
+		<time datetime="2022-04-13" class="text-muted">2022-04-13</time>
+	</div>
+	<header class="article-meta">
+		
+
+  
+    
+      
+
+
+    
+      
+
+
+    
+  
+
+		
+	</header>
+	<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <a href="https://www.talhoffman.com/2021/07/18/firecracker-internals/" target="_blank"><strong>Firecracker internals: a deep dive inside the technology powering AWS Lambda · Tal Hoffman</strong></a>
+      
+    </div>
+  
+  <div class="card-body">
+    
+    
+    
+      <p class="card-text">
+        
+          <p>Amazon decided to come-up with a better solution for its serverless workloads requiring:</p>
+<ul>
+<li>Consistent, close-to-native <strong>performance</strong>, which is also not being affected by other functions running on the same node</li>
+<li>Functions must be strongly <strong>isolated</strong> and protected against information disclosure, privilege escalation, and other security risks</li>
+<li>Full <strong>compatibility</strong> so functions are able to run arbitrary libraries and binaries without any re-compilation or code changes</li>
+<li>High and flexible <strong>scalability</strong> allowing thousands of functions to run on a single machine</li>
+<li>Functions must be able to <strong>over-commit</strong> resources, only using the minimal amount of resources they need</li>
+<li><strong>Startup &amp; tear-down</strong> should be very quick so that functions’ cold-start times remain small</li>
+</ul>
+<hr>
+<p>Firecracker takes advantage of the 64-bit Linux Boot Protocol, which specifies how the kernel image should be loaded and run. FC directly boots the Kernel at the <code>protected-mode</code> entry point rather than starting off from the 16-bit <code>real mode</code>.</p>
+<hr>
+<p>Firecracker directly uses the uncompressed kernel image <code>vmlinux</code>, saving additional costs of going through the traditional boot sequence in which the kernel decompresses itself at startup. All of this special FC boot sequence described above enables a major performance boost ultimately resulting in what AWS Lambda customer experience as fast cold starts.</p>
+<hr>
+<p>Note that there’s an even better virtio backend implementation called vhost, which introduces in-kernel virtio devices for KVM featuring direct guest-kernel-to-host-kernel data plane, saving redundant host userspace to kernel space syscalls. Firecracker does not currently use this implementation.</p>
+<hr>
+<p>Virtio specifies 3 possible transport layers offering slightly different layouts &amp; implementations of those drivers &amp; devices:</p>
+<ol>
+<li>PCI Bus based transport</li>
+<li>Memory Mapped IO based transport (FC’s chosen transport)</li>
+<li>Channel I/O based transport</li>
+</ol>
+<hr>
+<p><strong>KVM_IOEVENTFD</strong> This ioctl attaches or detaches an ioeventfd to a legal pio/mmio address within the guest. A guest write in the registered address will signal the provided event instead of triggering an exit. 
+
+<a href="https://www.kernel.org/doc/html/v5.10/virt/kvm/api.html#kvm-ioeventfd" target="_blank">Link</a></p>
+<hr>
+<p><strong>Overall, the flow of registering a MMIO-based device is as follows:</strong></p>
+<ol>
+<li>FC allocates a new slot for the MMIO device</li>
+<li>It subscribes to the guest-triggered ioevents</li>
+<li>It registers an irqfd in order to be able to send interrupts to the guest</li>
+<li>Inserts the device at the MMIO slot</li>
+<li>And finally sets the kernel 
+
+<a href="https://man7.org/linux/man-pages/man7/bootparam.7.html" target="_blank">bootparams</a> to include the guest driver:</li>
+</ol>
+<hr>
+
+        
+      </p>
+    
+  </div>
+  
+</div>
+
+
+	
+
+	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
+  <li>
+    <a href="/blog/2022/04/12/2022-04-12/" aria-label="上一页 - 2022-04-12" class="btn btn-primary"><span class="mr-1">←</span>上一页</a>
+  </li>
+    <a href="/blog/2022/04/15/2022-04-15/" aria-label="下一页 - 2022-04-15" class="btn btn-primary">下一页<span class="ml-1">→</span></a>
+  </li>
+</ul>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
       
 <footer class="bg-dark py-5 row d-print-none">
   <div class="container-fluid mx-sm-5">
